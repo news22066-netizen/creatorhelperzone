@@ -1,0 +1,270 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    /* theme tokens (rgb channels). Dark values: `.dark .public-shell` below. */
+    --surface: 255 255 255;
+    --brand-light: 132 250 154;
+    --brand-deep: 30 122 48;
+    --brand-ink: 15 31 20;
+    --gray-50: 249 250 251;
+    --gray-100: 243 244 246;
+    --gray-200: 229 231 235;
+    --gray-300: 209 213 219;
+    --gray-400: 156 163 175;
+    --gray-500: 107 114 128;
+    --gray-600: 75 85 99;
+    --gray-700: 55 65 81;
+    --gray-800: 31 41 55;
+    --gray-900: 17 24 39;
+    --grad-a: 30 122 48;
+    --grad-b: 47 154 66;
+
+    --background: 210 20% 96%;      /* light gray, Facebook vibe */
+    --foreground: 137 36% 9%;
+    --card: 0 0% 100%;
+    --card-foreground: 240 10% 12%;
+    --primary: 131 53% 39%;         /* brand green #2f9a42 */
+    --primary-foreground: 0 0% 100%;
+    --secondary: 210 14% 93%;
+    --secondary-foreground: 240 10% 12%;
+    --muted: 210 14% 93%;
+    --muted-foreground: 240 4% 46%;
+    --accent: 210 14% 93%;
+    --accent-foreground: 240 10% 12%;
+    --destructive: 0 72% 45%;
+    --destructive-foreground: 0 0% 100%;
+    --border: 214 15% 88%;
+    --input: 214 15% 85%;
+    --ring: 131 53% 39%;
+    --radius: 0.75rem;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground antialiased;
+    @apply font-sans;
+  }
+  :focus-visible {
+    outline: 2px solid #2f9a42;
+    outline-offset: 2px;
+  }
+}
+
+@layer utilities {
+  .no-scrollbar::-webkit-scrollbar { display: none; }
+  .no-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
+  .pb-safe { padding-bottom: env(safe-area-inset-bottom); }
+}
+
+/* ---------- Home hero motion (CSS only, no JS) ---------- */
+@keyframes hero-rise {
+  from { opacity: 0; transform: translateY(14px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+@keyframes hero-drift {
+  0%, 100% { transform: translate3d(0, 0, 0); }
+  50%      { transform: translate3d(0, -8px, 0); }
+}
+@keyframes hero-pop {
+  from { opacity: 0; transform: scale(0.92) translateY(8px); }
+  to   { opacity: 1; transform: scale(1) translateY(0); }
+}
+
+@layer utilities {
+  .hero-rise { animation: hero-rise 600ms cubic-bezier(0.22, 1, 0.36, 1) both; }
+  .hero-pop  { animation: hero-pop 600ms cubic-bezier(0.22, 1, 0.36, 1) both; }
+  .hero-drift      { animation: hero-drift 9s ease-in-out infinite; }
+  .hero-drift-slow { animation: hero-drift 14s ease-in-out infinite; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .hero-rise, .hero-pop, .hero-drift, .hero-drift-slow {
+    animation: none !important;
+    opacity: 1 !important;
+    transform: none !important;
+  }
+}
+
+/* ---------- Home marquee (the one decorative motion system on the home page) ---------- */
+@keyframes home-marquee {
+  from { transform: translateX(0); }
+  to   { transform: translateX(-50%); }
+}
+.home-marquee-row {
+  display: flex;
+  width: max-content;
+  animation: home-marquee 80s linear infinite;
+  will-change: transform;
+}
+.home-marquee-row[data-reverse="true"] { animation-direction: reverse; }
+.home-marquee-group { display: flex; gap: 14px; padding-right: 14px; }
+@media (prefers-reduced-motion: reduce) {
+  .home-marquee-row { animation: none !important; }
+}
+
+/* ---------- Dark theme (public site only; applied via .dark on <html> + .public-shell wrapper) ---------- */
+.dark .public-shell {
+  color-scheme: dark;
+  --surface: 14 22 17;
+  --brand-light: 31 99 49;
+  --brand-deep: 98 240 126;
+  --brand-ink: 236 248 239;
+  --gray-50: 22 33 26;
+  --gray-100: 28 40 32;
+  --gray-200: 42 56 46;
+  --gray-300: 62 78 66;
+  --gray-400: 120 135 125;
+  --gray-500: 150 165 155;
+  --gray-600: 172 186 176;
+  --gray-700: 200 212 203;
+  --gray-800: 224 234 226;
+  --gray-900: 240 247 241;
+  --grad-a: 66 229 95;
+  --grad-b: 132 250 154;
+  --border: 140 14% 22%;
+  --input: 140 14% 26%;
+}
+html.dark { color-scheme: dark; }
+html.dark body { background-color: rgb(14 22 17); }
+
+/* short colour fade while toggling the theme */
+html.theme-fade, html.theme-fade * {
+  transition: background-color 220ms ease, color 220ms ease, border-color 220ms ease !important;
+}
+
+/* ---------- Page header text animation (port of the SplitText "words drop in" reference, CSS only) ---------- */
+@keyframes word-drop {
+  0%   { opacity: 0; transform: translateY(-0.9em) rotate(var(--tilt, 0deg)); }
+  100% { opacity: 1; transform: translateY(0) rotate(0deg); }
+}
+@keyframes line-grow {
+  from { transform: scaleX(0); }
+  to   { transform: scaleX(1); }
+}
+@keyframes dock-bounce {
+  0%, 100% { transform: translateY(0); }
+  30% { transform: translateY(-9px); }
+  55% { transform: translateY(0); }
+  75% { transform: translateY(-4px); }
+}
+@layer utilities {
+  .word-drop {
+    animation: word-drop 760ms cubic-bezier(0.34, 1.56, 0.64, 1) both;
+    transform-origin: 50% 100%;
+  }
+  .line-grow { animation: line-grow 700ms cubic-bezier(0.22, 1, 0.36, 1) 350ms both; }
+  .rise-stagger {
+    animation: hero-rise 520ms cubic-bezier(0.22, 1, 0.36, 1) both;
+    animation-delay: calc(var(--i, 0) * 55ms);
+  }
+  .dock-bounce { animation: dock-bounce 520ms ease-out; }
+  .text-gradient-brand {
+    background-image: linear-gradient(90deg, rgb(var(--grad-a)), rgb(var(--grad-b)));
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    padding-bottom: 0.14em;
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  .word-drop, .line-grow, .rise-stagger, .dock-bounce {
+    animation: none !important;
+    opacity: 1 !important;
+    transform: none !important;
+  }
+  html.theme-fade, html.theme-fade * { transition: none !important; }
+}
+
+/* ---------- "Grow fast with our free tools" strip (creator pages + business ⋮ menu) ---------- */
+@keyframes promo-scroll {
+  from { transform: translateX(0); }
+  to   { transform: translateX(-50%); }
+}
+@keyframes promo-shine {
+  from { transform: translateX(-130%) skewX(-20deg); }
+  to   { transform: translateX(330%) skewX(-20deg); }
+}
+.promo-strip {
+  position: relative;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+  background: linear-gradient(90deg, #14532d, #1e7a30 50%, #14532d);
+  color: #fff;
+}
+/* soft light band sweeping across (kept faint so white text stays above 4.5:1 contrast) */
+.promo-strip::after {
+  content: "";
+  position: absolute;
+  inset: 0 auto 0 0;
+  width: 28%;
+  background: rgba(255, 255, 255, 0.1);
+  animation: promo-shine 4.5s ease-in-out infinite;
+  pointer-events: none;
+}
+.promo-track { display: flex; width: max-content; animation: promo-scroll 22s linear infinite; }
+.promo-item { display: inline-flex; align-items: center; gap: 0.5rem; padding-right: 2.5rem; white-space: nowrap; }
+.promo-strip:hover .promo-track { animation-play-state: paused; }
+@media (prefers-reduced-motion: reduce) {
+  .promo-track { animation: none; width: 100%; justify-content: center; }
+  .promo-track .promo-dup { display: none; }
+  .promo-item { padding-right: 0; }
+  .promo-strip::after { display: none; }
+}
+
+/* ---------- Creator page theme (variables come from lib/creator/appearance.ts) ---------- */
+.cp-page { background: var(--cp-bg); color: rgb(var(--cp-text-rgb)); }
+.cp-page :focus-visible { outline-color: rgb(var(--cp-text-rgb)); }
+.cp-card {
+  background: rgb(255 255 255 / var(--cp-surface-a));
+  border: 1px solid rgb(var(--cp-text-rgb) / 0.16);
+}
+.cp-muted { color: rgb(var(--cp-text-rgb) / 0.78); }
+.cp-btn { background: rgb(var(--cp-text-rgb)); color: var(--cp-btn-text); }
+.cp-btn:hover { opacity: 0.9; }
+.cp-btn-ghost { border: 2px solid rgb(var(--cp-text-rgb) / 0.35); color: rgb(var(--cp-text-rgb)); }
+.cp-btn-ghost:hover { background: rgb(var(--cp-text-rgb) / 0.08); }
+.cp-inverse { background: rgb(var(--cp-text-rgb)); color: var(--cp-btn-text); border: 1px solid transparent; }
+.cp-inverse .cp-inverse-muted { opacity: 0.85; }
+.cp-inverse .cp-btn-on-inverse { background: var(--cp-btn-text); color: rgb(var(--cp-text-rgb)); }
+.cp-bar { border-color: rgb(var(--cp-text-rgb) / 0.2); }
+
+
+/* ---------- Light marketing motion (CSS only; no scripts, no libraries) ---------- */
+/* Fade-up as a card scrolls into view. Browsers without scroll-driven animations just show the cards. */
+@keyframes reveal-up {
+  from { opacity: 0; transform: translateY(18px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+@supports (animation-timeline: view()) {
+  .reveal {
+    animation: reveal-up linear backwards;
+    animation-timeline: view();
+    animation-range: entry 0% entry 40%;
+  }
+}
+
+/* Soft hover lift for cards, arrow nudge inside CTAs, blinking caret in the claim pill */
+.lift-card { transition: transform 200ms ease, box-shadow 200ms ease, border-color 200ms ease; }
+@media (hover: hover) {
+  .lift-card:hover { transform: translateY(-2px); box-shadow: 0 2px 4px rgba(15,31,20,0.05), 0 10px 24px rgba(47,154,66,0.14); }
+}
+.cta-arrow { transition: transform 150ms ease; }
+a:hover > .cta-arrow, a:focus-visible > .cta-arrow { transform: translateX(3px); }
+@keyframes caret-blink { 0%, 49% { opacity: 1; } 50%, 100% { opacity: 0; } }
+.claim-caret { animation: caret-blink 1.1s steps(1) infinite; }
+
+@media (prefers-reduced-motion: reduce) {
+  .reveal { animation: none !important; opacity: 1 !important; transform: none !important; }
+  .lift-card, .cta-arrow { transition: none !important; }
+  .lift-card:hover { transform: none !important; }
+  a:hover > .cta-arrow, a:focus-visible > .cta-arrow { transform: none !important; }
+  .claim-caret { animation: none !important; opacity: 1; }
+}
