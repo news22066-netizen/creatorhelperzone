@@ -42,7 +42,7 @@ export function BrandingForm({
             type="url"
             inputMode="url"
             defaultValue={settings.logo_url}
-            placeholder="https://i.ibb.co/xxxx/creatorhub-logo.png"
+            placeholder="https://i.ibb.co/xxxx/BFEED-logo.png"
             maxLength={500}
           />
         </div>

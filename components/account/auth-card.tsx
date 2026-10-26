@@ -20,7 +20,7 @@ export function AuthCard({
           <Zap className="h-5 w-5 fill-white" />
         </span>
         <span className="text-lg font-extrabold tracking-tight">
-          CreatorHub<span className="text-brand"> BD</span>
+          BFEED<span className="text-brand"> BD</span>
         </span>
       </Link>
       <div className="w-full max-w-md rounded-3xl border border-brand-light/70 bg-white p-6 shadow-card">

@@ -16,7 +16,7 @@ export default async function CreatorDashboardLayout({ children }: { children: R
     <div className="mx-auto flex min-h-dvh w-full max-w-3xl flex-col">
       <header className="sticky top-0 z-20 flex h-14 items-center justify-between gap-3 border-b border-brand-light/60 bg-white px-4">
         <Link href="/dashboard/creator" className="text-lg font-extrabold tracking-tight">
-          CreatorHub<span className="text-brand"> BD</span>
+          BFEED<span className="text-brand"> BD</span>
           <span className="ml-2 rounded-full bg-brand-light/60 px-2 py-0.5 align-middle text-[10px] font-extrabold uppercase tracking-wide">
             Creator
           </span>

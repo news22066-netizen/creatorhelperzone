@@ -14,7 +14,7 @@ export type BlogPost = {
 
 export const blogPosts: BlogPost[] = [
   {
-    slug: "welcome-to-creatorhub-bd",
+    slug: "welcome-to-BFEED-bd",
     title: "Welcome to BFEED",
     excerpt: "Why we are building one free place for Bangladeshi creators, and what is coming next.",
     date: "2026-10-01",

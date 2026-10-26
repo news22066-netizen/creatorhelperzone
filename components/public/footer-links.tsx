@@ -44,7 +44,7 @@ export async function FooterLinks() {
       <div className="grid gap-6 md:grid-cols-[1.2fr_2fr]">
         <div>
           <p className="text-base font-extrabold tracking-tight text-brand-ink">
-            CreatorHub<span className="text-brand"> BD</span>
+            BFEED<span className="text-brand"> BD</span>
           </p>
           <p className="mt-1 max-w-xs text-[13px] leading-relaxed">
             A free home on the web for Bangladeshi creators and small businesses. No subscription for your page or store.

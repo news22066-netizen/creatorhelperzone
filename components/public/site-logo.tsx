@@ -42,7 +42,7 @@ export function SiteLogo({ logoUrl, compact = false }: { logoUrl: string; compac
         CH
       </span>
       <span className="text-[17px] font-extrabold leading-none tracking-tight text-brand-ink">
-        CreatorHub<span className="text-brand"> BD</span>
+        BFEED<span className="text-brand"> BD</span>
       </span>
     </span>
   );

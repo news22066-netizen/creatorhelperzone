@@ -12,7 +12,7 @@ export default async function BusinessDashboardLayout({ children }: { children: 
     <div className="mx-auto flex w-full max-w-3xl flex-col gap-5 px-4 py-6">
       <header className="flex items-center justify-between gap-3">
         <Link href="/dashboard/business" className="text-lg font-extrabold tracking-tight">
-          CreatorHub<span className="text-brand"> BD</span>
+          BFEED<span className="text-brand"> BD</span>
           <span className="ml-2 rounded-full bg-brand-light/60 px-2 py-0.5 align-middle text-[10px] font-extrabold uppercase tracking-wide">
             Store
           </span>
