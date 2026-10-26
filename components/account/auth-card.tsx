@@ -15,7 +15,7 @@ export function AuthCard({
 }) {
   return (
     <div className="flex min-h-screen flex-col items-center justify-center bg-white px-4 py-10">
-      <Link href="/" className="mb-6 flex items-center gap-2" aria-label="CreatorHub BD home">
+      <Link href="/" className="mb-6 flex items-center gap-2" aria-label="BFEED home">
         <span className="flex h-9 w-9 items-center justify-center rounded-xl bg-brand text-white">
           <Zap className="h-5 w-5 fill-white" />
         </span>

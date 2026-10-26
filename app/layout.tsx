@@ -7,8 +7,8 @@ const lora = Lora({ subsets: ["latin"], variable: "--font-lora", display: "swap"
 
 export const metadata: Metadata = {
   title: {
-    default: "CreatorHub BD — Free website for Bangladeshi creators",
-    template: "%s | CreatorHub BD",
+    default: "BFEED — Free website for Bangladeshi creators",
+    template: "%s | BFEED",
   },
   description:
     "Free Linktree-style page + storefront for Bangladeshi content creators and small businesses. Links, products and free classes in one place.",

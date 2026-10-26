@@ -63,7 +63,7 @@ export async function generateMetadata({ params }: Params): Promise<Metadata> {
   const name = profile.full_name || `@${profile.username}`;
   return {
     title: `${name} (@${profile.username})`,
-    description: profile.bio || `${name} on CreatorHub BD`,
+    description: profile.bio || `${name} on BFEED`,
     alternates: { canonical },
     openGraph: {
       type: "profile",

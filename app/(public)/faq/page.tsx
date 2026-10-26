@@ -7,7 +7,7 @@ export const revalidate = 300;
 
 export const metadata: Metadata = {
   title: "FAQ",
-  description: "Frequently asked questions about CreatorHub BD.",
+  description: "Frequently asked questions about BFEED.",
 };
 
 export default async function FaqPage() {

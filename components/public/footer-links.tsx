@@ -71,7 +71,7 @@ export async function FooterLinks() {
       </div>
 
       <p className="mt-4 border-t border-brand-light/40 pt-4 text-center text-xs">
-        © {new Date().getFullYear()} CreatorHub BD. Free for creators and businesses in Bangladesh.
+        © {new Date().getFullYear()} BFEED. Free for creators and businesses in Bangladesh.
       </p>
     </footer>
   );

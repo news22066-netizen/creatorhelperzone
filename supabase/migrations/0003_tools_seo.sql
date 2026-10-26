@@ -1,5 +1,5 @@
 -- ============================================================
--- CreatorHub BD — 0003 SEO tool detail pages
+-- BFEED — 0003 SEO tool detail pages
 -- Run in the Supabase SQL Editor AFTER 0002_security.sql. Safe to re-run.
 --
 -- Adds per-tool slug / long-form content / meta tags so each tool can have

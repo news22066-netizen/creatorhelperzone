@@ -29,7 +29,7 @@ const en: Record<string, string> = {
   "home.cta_secondary": "Explore free tools",
   "home.cta_free_note": "Free to start. No card needed.",
   "home.hero_subtitle":
-    "CreatorHub BD gives Bangladeshi creators and small businesses their own public page — links, products and free classes in one place. 100% free for the first 6 months.",
+    "BFEED gives Bangladeshi creators and small businesses their own public page — links, products and free classes in one place. 100% free for the first 6 months.",
   "home.cta": "Get your Free Website",
   "home.cta_note": "Free forever. No card needed.",
   "home.explore_tools": "Explore free tools",
@@ -52,7 +52,7 @@ const en: Record<string, string> = {
   "guides.subtitle":
     "Practical how-tos to grow your audience and sell online, written for creators in Bangladesh.",
   "guides.badge": "guides",
-  "faq.subtitle": "Quick answers about CreatorHub BD.",
+  "faq.subtitle": "Quick answers about BFEED.",
   "faq.badge": "FAQ",
   "trending.badge": "Weekly trending",
   "trending.subtitle": "What Bangladeshi viewers are watching and searching this week.",

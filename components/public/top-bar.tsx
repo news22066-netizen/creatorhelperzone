@@ -147,7 +147,7 @@ export function TopBar({
             >
               <MenuIcon className="h-5 w-5" />
             </button>
-            <Link href="/" aria-label="CreatorHub BD home" className="flex min-w-0 items-center">
+            <Link href="/" aria-label="BFEED home" className="flex min-w-0 items-center">
               <SiteLogo logoUrl={logoUrl} />
             </Link>
           </div>

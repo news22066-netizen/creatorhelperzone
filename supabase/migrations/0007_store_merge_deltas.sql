@@ -1,5 +1,5 @@
 -- ============================================================
--- CreatorHub BD — 0007 store merge deltas (run AFTER 0006_business_store.sql). Safe to re-run.
+-- BFEED — 0007 store merge deltas (run AFTER 0006_business_store.sql). Safe to re-run.
 --
 -- Helper names in 0006 (is_admin, is_active_member, is_public_profile) already match our
 -- 0001/0004 migrations, so 0006 runs unchanged. This file only closes three small gaps:

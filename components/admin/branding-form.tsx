@@ -50,7 +50,7 @@ export function BrandingForm({
           <div className="flex items-center gap-3 rounded-lg bg-gray-50 p-3">
             <span className="text-xs text-muted-foreground">Current:</span>
             {/* eslint-disable-next-line @next/next/no-img-element */}
-            <img src={settings.logo_url} alt="CreatorHub BD" className="h-9 w-auto max-w-[200px] object-contain" />
+            <img src={settings.logo_url} alt="BFEED" className="h-9 w-auto max-w-[200px] object-contain" />
           </div>
         )}
       </section>

@@ -1,4 +1,4 @@
-export const SITE_NAME = "CreatorHub BD";
+export const SITE_NAME = "BFEED";
 /** Placeholder: set NEXT_PUBLIC_CONTACT_EMAIL once a real inbox exists. */
 export const CONTACT_EMAIL = process.env.NEXT_PUBLIC_CONTACT_EMAIL ?? "hello@bfeed.store";
 // Single source of truth lives in lib/site-url.ts (never falls back to localhost in production builds).

@@ -1,5 +1,5 @@
 // ============================================================
-// CreatorHub BD — business store types (mirror of 0006_business_store.sql + 0007 deltas)
+// BFEED — business store types (mirror of 0006_business_store.sql + 0007 deltas)
 // Field names are snake_case to match Supabase rows directly.
 // ============================================================
 

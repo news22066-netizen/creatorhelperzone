@@ -1,5 +1,5 @@
 -- ============================================================
--- CreatorHub BD — 0008 product slugs, store section toggles, contact links
+-- BFEED — 0008 product slugs, store section toggles, contact links
 -- Run in the Supabase SQL Editor AFTER 0007_store_merge_deltas.sql. Safe to re-run.
 --
 --  1. store_products.slug     unique per store (user_id, slug), auto-filled from the name

@@ -16,7 +16,7 @@ export function SiteLogo({ logoUrl, compact = false }: { logoUrl: string; compac
       // eslint-disable-next-line @next/next/no-img-element
       <img
         src={logoUrl}
-        alt="CreatorHub BD"
+        alt="BFEED"
         height={44}
         decoding="async"
         onError={() => setFailed(true)}

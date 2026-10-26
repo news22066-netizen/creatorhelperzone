@@ -118,7 +118,7 @@ export type SiteSocialKey =
 export const DEFAULT_SETTINGS: SiteSettings = {
   store_enabled: false,
   collaboration_enabled: false,
-  site_name: "CreatorHub BD",
+  site_name: "BFEED",
   logo_url: "",
   social_links: {},
 };

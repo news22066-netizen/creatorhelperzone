@@ -4,7 +4,7 @@ import { ProsePage } from "@/components/public/prose-page";
 
 export const metadata: Metadata = {
   title: "Help Center",
-  description: "Help for CreatorHub BD: creating your page, logging in, managing links and getting support.",
+  description: "Help for BFEED: creating your page, logging in, managing links and getting support.",
 };
 
 const topics = [

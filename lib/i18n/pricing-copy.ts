@@ -25,7 +25,7 @@ export interface PricingCopy {
 const en: PricingCopy = {
   kicker: "Pricing",
   title: "Free. For good.",
-  sub: "CreatorHub BD is completely free for creators and businesses. No subscription for your public page or your store, now or later.",
+  sub: "BFEED is completely free for creators and businesses. No subscription for your public page or your store, now or later.",
   priceLabel: "৳0",
   priceNote: "per month, for the core platform. No card needed.",
   includedKicker: "What is included",
@@ -86,7 +86,7 @@ const en: PricingCopy = {
 const bn: PricingCopy = {
   kicker: "প্রাইসিং",
   title: "ফ্রি। সারাজীবন।",
-  sub: "ক্রিয়েটর আর ব্যবসা, দুই ধরনের অ্যাকাউন্টের জন্যই CreatorHub BD পুরোপুরি ফ্রি। পাবলিক পেজ বা স্টোরের জন্য এখন বা পরে কোনো সাবস্ক্রিপশন নেই।",
+  sub: "ক্রিয়েটর আর ব্যবসা, দুই ধরনের অ্যাকাউন্টের জন্যই BFEED পুরোপুরি ফ্রি। পাবলিক পেজ বা স্টোরের জন্য এখন বা পরে কোনো সাবস্ক্রিপশন নেই।",
   priceLabel: "৳০",
   priceNote: "প্রতি মাসে, মূল প্ল্যাটফর্মের জন্য। কার্ড লাগবে না।",
   includedKicker: "কী কী পাচ্ছেন",

@@ -136,7 +136,7 @@ export function StoreMenu({
               <p className="px-3 pb-1 pt-2 text-xs text-store-text/70">
                 Powered by{" "}
                 <Link href="/" onClick={close} className="font-semibold underline">
-                  CreatorHub BD
+                  BFEED
                 </Link>
               </p>
             </div>

@@ -1,5 +1,5 @@
 -- ============================================================
--- CreatorHub BD — initial schema (MVP 1)
+-- BFEED — initial schema (MVP 1)
 -- Public read / admin-only write via RLS.
 -- ============================================================
 
@@ -177,10 +177,10 @@ create policy "settings_admin_all" on public.site_settings
 insert into public.site_settings (key, value) values
   ('store_enabled', 'false'),
   ('collaboration_enabled', 'false'),
-  ('site_name', '"CreatorHub BD"');
+  ('site_name', '"BFEED"');
 
 insert into public.faqs (question, answer, sort_order) values
-  ('What is CreatorHub BD?', 'CreatorHub BD is a free platform where Bangladeshi content creators and small businesses get their own public page with links, products and free classes. Free for the first 6 months.', 1),
+  ('What is BFEED?', 'BFEED is a free platform where Bangladeshi content creators and small businesses get their own public page with links, products and free classes. Free for the first 6 months.', 1),
   ('Is it really free?', 'Yes. For the first 6 months everything is 100% free while we build the community.', 2),
   ('Who can join?', 'YouTube, Facebook, TikTok and Instagram creators, plus small businesses, course sellers and digital product sellers from Bangladesh.', 3),
   ('How do I get my page?', 'Sign up as a Creator or Business, choose your username, add your links — your public page is ready at eg.com/yourusername.', 4),

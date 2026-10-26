@@ -45,7 +45,7 @@ export function buildCreatorUrl(opts: {
   } else if (opts.workTitle) {
     lines.push(`I saw your work "${opts.workTitle}" and would like to talk about it.`);
   } else {
-    lines.push("I found you on CreatorHub BD.");
+    lines.push("I found you on BFEED.");
   }
   if (opts.path) lines.push(`Link: ${absoluteUrl(opts.path)}`);
   return waLink(opts.whatsapp, lines);

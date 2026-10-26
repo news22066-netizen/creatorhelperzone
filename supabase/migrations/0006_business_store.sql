@@ -1,5 +1,5 @@
 -- ============================================================
--- CreatorHub BD — 0006 business store
+-- BFEED — 0006 business store
 -- Run in the Supabase SQL Editor AFTER 0005_reserve_cookies.sql.
 -- Safe to re-run (idempotent guards throughout).
 --

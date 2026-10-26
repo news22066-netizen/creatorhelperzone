@@ -6,13 +6,13 @@ export const revalidate = 3600;
 
 const TITLE = "Pricing: free forever for creators and businesses";
 const DESCRIPTION =
-  "CreatorHub BD is completely free for Bangladeshi creators and businesses. Public username page, online store, WhatsApp buttons, tools and guides, with no subscription and no commission.";
+  "BFEED is completely free for Bangladeshi creators and businesses. Public username page, online store, WhatsApp buttons, tools and guides, with no subscription and no commission.";
 
 export const metadata: Metadata = {
   title: TITLE,
   description: DESCRIPTION,
   alternates: { canonical: "/pricing" },
-  openGraph: { title: `${TITLE} | CreatorHub BD`, description: DESCRIPTION, type: "website", url: "/pricing" },
+  openGraph: { title: `${TITLE} | BFEED`, description: DESCRIPTION, type: "website", url: "/pricing" },
 };
 
 export default function PricingPage() {

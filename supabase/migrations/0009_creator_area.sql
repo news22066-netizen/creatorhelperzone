@@ -1,5 +1,5 @@
 -- ============================================================
--- CreatorHub BD — 0009 creator area (works, pricing, videos, appearance, contact)
+-- BFEED — 0009 creator area (works, pricing, videos, appearance, contact)
 -- Run in the Supabase SQL Editor AFTER 0008_store_slugs_sections_contact.sql. Safe to re-run.
 --
 --   creator_settings      1:1 with profiles — appearance preset, About text, contact + social links

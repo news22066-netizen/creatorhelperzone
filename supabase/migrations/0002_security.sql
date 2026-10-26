@@ -1,5 +1,5 @@
 -- ============================================================
--- CreatorHub BD — 0002 security hardening
+-- BFEED — 0002 security hardening
 -- Run in the Supabase SQL Editor AFTER 0001_init.sql. Safe to re-run.
 --
 -- Fixes:

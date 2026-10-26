@@ -4,7 +4,7 @@ import { ProsePage } from "@/components/public/prose-page";
 
 export const metadata: Metadata = {
   title: "Cookie Policy",
-  description: "How CreatorHub BD uses cookies and browser storage.",
+  description: "How BFEED uses cookies and browser storage.",
 };
 
 export default function CookiesPage() {

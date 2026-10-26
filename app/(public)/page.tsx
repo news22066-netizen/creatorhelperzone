@@ -16,7 +16,7 @@ import {
 export const revalidate = 120;
 
 export const metadata: Metadata = {
-  title: { absolute: "CreatorHub BD — বাংলাদেশি ক্রিয়েটরদের ফ্রি ওয়েবসাইট" },
+  title: { absolute: "BFEED — বাংলাদেশি ক্রিয়েটরদের ফ্রি ওয়েবসাইট" },
   description:
     "ফেসবুক, ইউটিউব আর হোয়াটসঅ্যাপের সব লিংক এক ফ্রি পেজে। বাংলাদেশি ক্রিয়েটর ও ছোট ব্যবসার জন্য ফ্রি টুলস, গাইড আর পাবলিক পেজ।",
 };

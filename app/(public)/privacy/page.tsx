@@ -4,7 +4,7 @@ import { ProsePage } from "@/components/public/prose-page";
 
 export const metadata: Metadata = {
   title: "Privacy Policy",
-  description: "How CreatorHub BD collects, uses and protects your information.",
+  description: "How BFEED collects, uses and protects your information.",
 };
 
 export default function PrivacyPage() {

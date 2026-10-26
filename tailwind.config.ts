@@ -41,7 +41,7 @@ const config: Config = {
           "on-primary": v("--store-on-primary-rgb"),
         },
         gray: Object.fromEntries(grays.map((g) => [g, v(`--gray-${g}`)])),
-        // CreatorHub BD public brand — greens only.
+        // BFEED public brand — greens only.
         brand: {
           DEFAULT: "#2f9a42", // primary: buttons, active nav, focus
           secondary: "#42e55f", // hover, highlights

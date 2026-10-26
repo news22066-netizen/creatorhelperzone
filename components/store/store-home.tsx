@@ -174,7 +174,7 @@ export function StoreFooter({ username }: { username: string }) {
       <span>
         Powered by{" "}
         <Link href="/" className="font-semibold underline">
-          CreatorHub BD
+          BFEED
         </Link>
       </span>
     </footer>

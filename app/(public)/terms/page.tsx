@@ -4,13 +4,13 @@ import { ProsePage } from "@/components/public/prose-page";
 
 export const metadata: Metadata = {
   title: "Terms of Service",
-  description: "The terms for using CreatorHub BD.",
+  description: "The terms for using BFEED.",
 };
 
 export default function TermsPage() {
   return (
     <ProsePage title="Terms of Service" updated="October 2026" template>
-      <h2>1. Using CreatorHub BD</h2>
+      <h2>1. Using BFEED</h2>
       <p>
         By using the site you agree to these terms. You must provide accurate information and keep your
         login secure.

@@ -1,4 +1,4 @@
-# CreatorHub BD — MVP 1
+# BFEED — MVP 1
 
 Free platform for Bangladeshi content creators and small businesses.
 Single Next.js 15 app serving two subdomains via middleware routing.

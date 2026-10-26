@@ -7,7 +7,7 @@ import { formatDate } from "@/lib/utils/format";
 
 export const metadata: Metadata = {
   title: "Blog",
-  description: "News, tips and stories from CreatorHub BD for Bangladeshi creators.",
+  description: "News, tips and stories from BFEED for Bangladeshi creators.",
 };
 
 export default function BlogIndexPage() {

@@ -6,7 +6,7 @@ import { CONTACT_EMAIL } from "@/lib/constants";
 
 export const metadata: Metadata = {
   title: "Contact",
-  description: "Get in touch with the CreatorHub BD team: questions, feedback and partnership ideas.",
+  description: "Get in touch with the BFEED team: questions, feedback and partnership ideas.",
 };
 
 export default function ContactPage() {

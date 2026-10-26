@@ -1,5 +1,5 @@
 -- ============================================================
--- CreatorHub BD — 0004 creator/business accounts, public profile, links
+-- BFEED — 0004 creator/business accounts, public profile, links
 -- Run in the Supabase SQL Editor AFTER 0003_tools_seo.sql. Safe to re-run.
 --
 -- Adds:

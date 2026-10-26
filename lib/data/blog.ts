@@ -15,13 +15,13 @@ export type BlogPost = {
 export const blogPosts: BlogPost[] = [
   {
     slug: "welcome-to-creatorhub-bd",
-    title: "Welcome to CreatorHub BD",
+    title: "Welcome to BFEED",
     excerpt: "Why we are building one free place for Bangladeshi creators, and what is coming next.",
     date: "2026-10-01",
     readingMinutes: 2,
     sample: true,
     body: [
-      "CreatorHub BD is a free home for Bangladeshi creators and small businesses: free tools, practical guides, and your own public page where your links, products and classes live together.",
+      "BFEED is a free home for Bangladeshi creators and small businesses: free tools, practical guides, and your own public page where your links, products and classes live together.",
       "This is a sample post so the blog structure is ready. Real posts will cover growing an audience, selling online in Bangladesh, and new features as we ship them.",
     ],
   },

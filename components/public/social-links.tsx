@@ -21,7 +21,7 @@ export function SocialLinks({
             href={socials[s.key]}
             target="_blank"
             rel="noopener noreferrer"
-            aria-label={`CreatorHub BD on ${s.label}`}
+            aria-label={`BFEED on ${s.label}`}
             title={s.label}
             className="flex h-11 w-11 items-center justify-center rounded-full border border-brand-light/70 bg-brand-light/20 text-brand-deep transition-colors duration-150 hover:bg-brand hover:text-white motion-reduce:transition-none"
           >

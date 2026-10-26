@@ -65,7 +65,7 @@ export function AdminShell({
       {/* Desktop sidebar */}
       <aside className="fixed inset-y-0 left-0 hidden w-60 flex-col border-r bg-white p-4 md:flex">
         <div className="mb-6 px-3">
-          <p className="font-bold text-blue-600">CreatorHub BD</p>
+          <p className="font-bold text-blue-600">BFEED</p>
           <p className="text-xs text-muted-foreground">Admin Panel</p>
         </div>
         <div className="flex-1">{NavLinks}</div>
@@ -101,7 +101,7 @@ export function AdminShell({
         <div className="fixed inset-0 z-50 bg-black/40 md:hidden" onClick={() => setOpen(false)}>
           <div className="h-full w-64 bg-white p-4" onClick={(e) => e.stopPropagation()}>
             <div className="mb-4 flex items-center justify-between">
-              <span className="font-bold text-blue-600">CreatorHub BD</span>
+              <span className="font-bold text-blue-600">BFEED</span>
               <Button variant="ghost" size="icon" onClick={() => setOpen(false)}>
                 <X className="h-5 w-5" />
               </Button>

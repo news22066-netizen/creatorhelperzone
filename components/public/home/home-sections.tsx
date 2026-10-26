@@ -41,7 +41,7 @@ export function TrustStrip({ toolCount }: { toolCount: number }) {
     },
   ];
   return (
-    <section aria-label="CreatorHub BD">
+    <section aria-label="BFEED">
       <ul className="grid grid-cols-2 gap-3 md:grid-cols-4">
         {items.map((it, i) => {
           const Icon = icons[i];
